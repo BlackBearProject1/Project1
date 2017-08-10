@@ -158,8 +158,8 @@ h3,
 
 /* portfolio page */
 
-.picture-button {
-    background: blue 0 0 repeat transparent;
+.button-picture {
+    background:blue;
     display: block;
     position: relative;
     padding: 11px 20px;
