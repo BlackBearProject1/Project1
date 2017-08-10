@@ -63,7 +63,7 @@ function initAutocomplete() {
         var geocoder = new google.maps.Geocoder();
         var address = places[0].formatted_address;
         geocoder.geocode( { 'address': address}, function(results, status) {
-          console.log(results)
+          console.log(results);
         });
 
     if (places.length == 0) {
