@@ -3,7 +3,8 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777;
-  background: url("../images/concrete_seamless.png");
+  background-color: #252839;
+
 }
 
 * {
@@ -17,6 +18,7 @@ body {
   max-width: 960px;
   margin: 0 auto;
   clear: both;
+
 }
 
 h1,
@@ -35,7 +37,7 @@ h2,
 h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
-  color: #4aaaa5;
+  color: #f2b632;
 }
 
 h1 {
@@ -43,6 +45,7 @@ h1 {
   font-size: 30px;
   line-height: 49px;
   border-bottom: 3px solid #ddd;
+
 }
 
 h2,
@@ -53,13 +56,12 @@ h3 {
 /* header */
 
 #masthead {
-  position: fixed;
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
   overflow: auto;
   color: #fff;
-  background: #fff;
+  background:#677077;
   border-bottom: 2px solid #ccc;
 }
 
@@ -71,10 +73,11 @@ h3 {
   font-size: 30px;
   font-weight: 700;
   line-height: 90px;
-  color: #fff;
+  color: white;
   text-align: center;
   text-decoration: none;
   background: #4aaaa5;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpn66UGp-Sy4IB79sca7TwwCipzO1DGfYjw-Lc3OjGOD_ABfYM);
 }
 
 nav {
@@ -87,7 +90,7 @@ nav a {
   padding-left: 15px;
   margin-left: 15px;
   line-height: 18px;
-  color: #999;
+  color: white;
   text-decoration: none;
   border-left: 1px solid #efefef;
 }
@@ -149,11 +152,12 @@ h3,
 .main-section {
   float: left;
   width: 100%;
-  max-width: 650px;
+  max-width: 950px;
   padding: 30px;
   margin: 0 0 40px;
-  background: #fff;
+  background: #677077;
   border: 1px solid #ddd;
+
 }
 
 /* portfolio page */
@@ -164,6 +168,8 @@ h3,
     position: relative;
     padding: 11px 20px;
     margin-top: -40px;
+
+
 }
 
 .work {
@@ -178,10 +184,12 @@ h3,
   margin-right: 40px;
 }
 
-.work img {
+ .work img {
   width: 100%;
   border: 0 none;
   opacity: 0.8;
+  margin: auto;
+  
 }
 
 .work h3 {
@@ -198,13 +206,7 @@ h3,
   border-bottom: 0;
 }
 
-.auth-image {
-  float: left;
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-  margin-right: 25px;
-}
+
 
 /* contact page */
 
