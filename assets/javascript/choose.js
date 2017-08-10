@@ -1,6 +1,8 @@
 var addr;
 var w;
 var zip;
+var long;
+var lat;
 
 
 
@@ -14,50 +16,47 @@ $(document).ready(function() {
 
 
 
-  $("#locations").click(function() {
+
+
+  $("#locations").on("click", function() {
     event.preventDefault();
     var a = localStorage.getItem('_activity');
     localStorage.clear();
     localStorage.setItem('_activity', a);
     localStorage.setItem('_zip', addr[0].address_components[7].short_name);
-    $.ajax({url: "https://maps.googleapis.com/maps/api/geocode/json?address=4949 Alton Pkwy, Irvine, CA 92604, USA", success: function(result){
+          $.ajax({url: "https://maps.googleapis.com/maps/api/geocode/json?address=" + addr[0].formatted_address , success: function(result){
           console.log(result);
           localStorage.setItem('_long', result.results[0].geometry.location.lng);
+          long = result.results[0].geometry.location.lng;
           localStorage.setItem('_latt', result.results[0].geometry.location.lat);
+          lat = result.results[0].geometry.location.lat;
+          document.cookie = "long=" + result.results[0].geometry.location.lng + "; latt=" + "result.results[0].geometry.location.lat";
+          window.open('locations.html#' + long + "," + lat, false);
       }});
-window.open('locations.html', false);
-        });
 
-  $("#groups").click(function() {
+  });
+
+  $("#groups").on("click", function() {
 
       event.preventDefault();
       var a = localStorage.getItem('_activity');
       localStorage.clear();
       localStorage.setItem('_activity', a);
       localStorage.setItem('_zip', addr[0].address_components[7].short_name);
-      zip = addr[0].address_components[7].short_name;
-      $.ajax({url: "https://maps.googleapis.com/maps/api/geocode/json?address=4949 Alton Pkwy, Irvine, CA 92604, USA", success: function(result){
+            $.ajax({url: "https://maps.googleapis.com/maps/api/geocode/json?address=" + addr[0].formatted_address , success: function(result){
             console.log(result);
             localStorage.setItem('_long', result.results[0].geometry.location.lng);
             localStorage.setItem('_latt', result.results[0].geometry.location.lat);
         }});
         window.open('meetups.html', false);
-        weather(zip);
+
 
 
   });
 
-function weather(zip){
-  $.ajax({url: "https://api.openweathermap.org/data/2.5/forecast/daily?zip=" + zip + "&APPID=2528bcb5c37c616b9f6efccf556a8431", success: function(result){
-        console.log(result);
-        w = result;
-    }});
 
-}
 
-  $.ajax({url: "https://maps.googleapis.com/maps/api/geocode/json?address=4949 Alton Pkwy, Irvine, CA 92604, USA", success: function(result){
-        console.log(result);
-    }});
+
 
 
 });
