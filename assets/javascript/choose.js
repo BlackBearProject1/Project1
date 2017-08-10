@@ -4,6 +4,13 @@ var addr;
 
 $(document).ready(function() {
 
+  $(".auth-image").on("click", function(){
+    x= $(this).attr("id");
+    localStorage.setItem('_activity', x);
+  });
+
+
+
   $("#locations").click(function() {
     event.preventDefault();
     localStorage.clear();
