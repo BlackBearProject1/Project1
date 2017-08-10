@@ -4,14 +4,24 @@ var addr;
 
 $(document).ready(function() {
 
-$("#locations").click(function() {
-event.preventDefault();
-localStorage.clear();
-localStorage.setItem('_zip', addr[0].address_components[7].short_name);
-localStorage.setItem('_long', addr[0].address_components[7].short_name);
-localStorage.setItem('_latt', addr[0].address_components[7].short_name);
+  $("#locations").click(function() {
+    event.preventDefault();
+    localStorage.clear();
+    localStorage.setItem('_zip', addr[0].address_components[7].short_name);
+    $.ajax({url: "https://maps.googleapis.com/maps/api/geocode/json?address=4949 Alton Pkwy, Irvine, CA 92604, USA", success: function(result){
+          console.log(result);
+          localStorage.setItem('_long', result.results[0].geometry.location.lng);
+          localStorage.setItem('_latt', result.results[0].geometry.location.lat);
+      }});
 
-        });
+
+  });
+
+
+
+  $.ajax({url: "https://maps.googleapis.com/maps/api/geocode/json?address=4949 Alton Pkwy, Irvine, CA 92604, USA", success: function(result){
+        console.log(result);
+    }});
 
 
 });
@@ -49,6 +59,13 @@ function initAutocomplete() {
   searchBox.addListener('places_changed', function() {
     var places = searchBox.getPlaces();
         addr = places;
+        console.log(places);
+        var geocoder = new google.maps.Geocoder();
+        var address = places[0].formatted_address;
+        geocoder.geocode( { 'address': address}, function(results, status) {
+          console.log(results)
+        });
+
     if (places.length == 0) {
       return;
     }
