@@ -25,7 +25,7 @@ $(document).ready(function() {
         success: function (data) {
             console.log(data);
             for (i = 0; i < data.data.length; i++) {
-              $("#meetups").append(data.data[i].group.name  + "<a href='" + data.data[i].link + "'><br>"+data.data[i].link+"</a><br>"+ data.data[i].venue.address_1+"<br>"+ data.data[i].venue.city+"<br><br>");
+              $("#meetups").append(data.data[i].group.name  + "<a href='" + data.data[i].link + "'><br>"+data.data[i].link+"<br><br>");
               }
 
         }
