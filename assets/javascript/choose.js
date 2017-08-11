@@ -47,8 +47,11 @@ $(document).ready(function() {
             console.log(result);
             localStorage.setItem('_long', result.results[0].geometry.location.lng);
             localStorage.setItem('_latt', result.results[0].geometry.location.lat);
+            lat = result.results[0].geometry.location.lat;
+            long = result.results[0].geometry.location.lng;
+            window.open('meetups.html#' + lat + "," + long, false);
         }});
-        window.open('meetups.html', false);
+
 
 
 
