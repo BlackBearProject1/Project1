@@ -11,7 +11,7 @@ $(document).ready(function() {
             for (i = 0; i < data.list.length; i++) {
 
 
-                $("#day" + i).html(Math.round(((data.list[i].temp.day-273)*1.8)+32)+ "°F<br>" + data.list[0].weather[0].main);
+                $("#day" + i).html("<img src=assets/images/"+data.list[i].weather[0].icon +".png>"+(Math.round((data.list[i].temp.day-273)*1.8)+32)+ "°F<br>" + data.list[0].weather[0].main);
             }
 
         });

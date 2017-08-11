@@ -80,3 +80,6 @@ html, body {
 #target {
   width: 345px;
 }
+.day {
+  display: inline-block;
+}
