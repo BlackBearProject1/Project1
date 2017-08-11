@@ -12,6 +12,49 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css"> <!--css file link -->
   <link rel="stylesheet" href="assets/css/choose.css">
   <script src="assets/javascript/choose.js"></script>
+
+<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: #f2b632;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #677077;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #f2b632;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #00cc00}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
+
 </head>
 
 <body>
@@ -29,11 +72,25 @@
       </d1>
     </div>
 
-  </header> <!--end -->
+  </header> <!--end header-->
 
   <div id="main-container" class="container"> <!--main container for picture=buttons -->
-    <section class="main-section">
+    
+    <div class="dropdown"> <!-- dropdown div -->
+        <button class="dropbtn">Dropdown</button> <!-- Dropdown button -->
+        <div class="dropdown-content">  <!-- content div -->
+          <a href="#" class="auth-image" id="snow">Ski/Snowboard</a> <!-- snowboard link -->
+          <a href="#" class="auth-image" id="surf">Surfing</a> <!-- surf link -->
+          <a href="#" class="auth-image" id="climb">Climbing</a> <!-- climb link -->
+          <a href="#" class="auth-image" id="hike">Hiking</a> <!-- hiking link -->
+          <a href="#" class="auth-image" id="bike">Biking</a> <!-- biking link -->
+          <a href="#" class="auth-image" id="fish">Fishing</a> <!-- skateboarding link -->
+        </div><!-- end dropdown-content -->
+    </div><!--end of dropdown -->
+
+    <section class="main-section"> <!--main container for picture=buttons -->
       <h1>oof select activity</h1> <!-- user prompt / instruction for picture=buttons-->
+
       <div class="row" id="button-picture"> <!-- row of picture=buttons -->
       <!-- picture buttons .jpgs -->
         <img src="assets/images/snowboard.jpg" class="auth-image" alt="snow" id="snow">
