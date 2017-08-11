@@ -3,6 +3,7 @@ var w;
 var zip;
 var long;
 var lat;
+var data;
 
 
 

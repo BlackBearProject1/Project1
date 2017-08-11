@@ -24,6 +24,10 @@ $(document).ready(function() {
         jsonp: 'callback',
         success: function (data) {
             console.log(data);
+            for (i = 0; i < data.data.length; i++) {
+              $("#meetups").append(data.data[i].group.name + "<br>" + "<a href='" + data.data[i].link + "'>"+data.data[i].link+"</a>");
+              }
+
         }
     });
 
