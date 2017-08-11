@@ -1,12 +1,16 @@
+
+
 $(document).ready(function() {
 
 
     $.ajax({
-        url: "https://api.openweathermap.org/data/2.5/forecast/daily?zip=" + localStorage.getItem('_zip') + "&APPID=2528bcb5c37c616b9f6efccf556a8431",
+        url: "https://api.meetup.com/find/events?&sign=true&photo-host=public&lon=-117.826505&text=hiking&radius=25&lat=33.684567&key=11d761223655b1e244f222b312174",
         dataType: 'JSONP',
         jsonpCallback: 'callback',
         cache: false,
         type: 'GET',
+        jsonp: 'callback',
+jsonpCallback: 'jsonp_callback',
         success: function (data) {
             console.log(data);
         }

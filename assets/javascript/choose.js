@@ -31,7 +31,7 @@ $(document).ready(function() {
           localStorage.setItem('_latt', result.results[0].geometry.location.lat);
           lat = result.results[0].geometry.location.lat;
           document.cookie = "long=" + result.results[0].geometry.location.lng + "; latt=" + "result.results[0].geometry.location.lat";
-          window.open('locations.html#' + long + "," + lat, false);
+          window.open('locations.html#' + lat + "," + long, false);
       }});
 
   });
@@ -77,6 +77,10 @@ function initAutocomplete() {
     zoom: 13,
     mapTypeId: 'roadmap'
   });
+
+
+
+
 
   // Create the search box and link it to the UI element.
   var input = document.getElementById('pac-input');
@@ -140,7 +144,10 @@ function initAutocomplete() {
       } else {
         bounds.extend(place.geometry.location);
       }
+
     });
+
+
     map.fitBounds(bounds);
   });
 }
