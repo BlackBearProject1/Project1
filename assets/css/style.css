@@ -105,14 +105,7 @@ body {
 
 }
 
-h1,
-h2,
-h3,
-p {
-  margin-bottom: 20px;
-  margin-left: 250px;
 
-}
 
 p:last-child {
   margin-bottom: 0;
