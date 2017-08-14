@@ -97,11 +97,19 @@ body {
 }
 .container3 {
   width: 100%;
-  max-width: 960px;
   margin: 0 auto;
   clear: both;
 
 
+<<<<<<< HEAD
+=======
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
+  
+>>>>>>> origin/Damian
 
 }
 
@@ -185,8 +193,6 @@ nav a:first-child {
   border-left: 0 none;
 }
 
-/* footer */
-
 footer {
   padding: 30px 0;
   clear: both;
@@ -195,7 +201,12 @@ footer {
   color: #ccc;
   text-align: center;
   background: #16A085;
+<<<<<<< HEAD
 
+=======
+  
+  
+>>>>>>> origin/Damian
 
 }
 
@@ -230,10 +241,13 @@ h3,
   margin-right: 0;
 }
 
+<<<<<<< HEAD
 /* main */
 
 
 
+=======
+>>>>>>> origin/Damian
 .main-section {
   float: left;
   width: 100%;
