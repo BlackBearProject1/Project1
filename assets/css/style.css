@@ -97,7 +97,6 @@ body {
 }
 .container3 {
   width: 100%;
-  max-width: 960px;
   margin: 0 auto;
   clear: both;
   
@@ -110,7 +109,7 @@ h2,
 h3,
 p {
   margin-bottom: 20px;
-  margin-left: 250px;
+  
 
 }
 
@@ -192,8 +191,6 @@ nav a:first-child {
   border-left: 0 none;
 }
 
-/* footer */
-
 footer {
   padding: 30px 0;
   clear: both;
@@ -202,8 +199,8 @@ footer {
   color: #ccc;
   text-align: center;
   background: #16A085;
-  margin-left: -500px;
-  margin-right: -200px;
+  
+  
 
 }
 
@@ -236,14 +233,6 @@ h3,
 
 .social:last-child {
   margin-right: 0;
-}
-
-/* main */
-
-#main-container {
-  padding-top: 130px;
-  margin-right: 25px;
-
 }
 
 .main-section {
