@@ -36,23 +36,23 @@ $(document).ready(function() {
       }});
 
   });
-  //
-  // $("#groups").on("click", function() {
-  //
-  //     event.preventDefault();
-  //     var a = localStorage.getItem('_activity');
-  //     localStorage.clear();
-  //     localStorage.setItem('_activity', a);
-  //     localStorage.setItem('_zip', addr[0].address_components[7].short_name);
-  //           $.ajax({url: "https://maps.googleapis.com/maps/api/geocode/json?address=" + addr[0].formatted_address , success: function(result){
-  //           console.log(result);
-  //           localStorage.setItem('_long', result.results[0].geometry.location.lng);
-  //           localStorage.setItem('_latt', result.results[0].geometry.location.lat);
-  //           lat = result.results[0].geometry.location.lat;
-  //           long = result.results[0].geometry.location.lng;
-  //           window.open('meetups.html#' + lat + "," + long, false);
-  //       }});
-  //
+  
+  $("#groups").on("click", function() {
+
+      event.preventDefault();
+      var a = localStorage.getItem('_activity');
+      localStorage.clear();
+      localStorage.setItem('_activity', a);
+      localStorage.setItem('_zip', addr[0].address_components[7].short_name);
+            $.ajax({url: "https://maps.googleapis.com/maps/api/geocode/json?address=" + addr[0].formatted_address , success: function(result){
+            console.log(result);
+            localStorage.setItem('_long', result.results[0].geometry.location.lng);
+            localStorage.setItem('_latt', result.results[0].geometry.location.lat);
+            lat = result.results[0].geometry.location.lat;
+            long = result.results[0].geometry.location.lng;
+            window.open('meetups.html#' + lat + "," + long, false);
+        }});
+
 
 
 
