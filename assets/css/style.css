@@ -3,61 +3,8 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777;
-  z-index: -1;
-
+  background: url("../images/concrete_seamless.png");
 }
-<<<<<<< HEAD
-=======
-img {
-    vertical-align: middle;
-    padding-bottom: 90px;
-}
-#p1{
-    margin: 0 0 10px;
-    text-align: left;
-}
-.dropbtn {
-    background-color: #4CAF50;
-    color: #f2b632;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    z-index: 4;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    z-index: 50;
-    z-index: 4;
-
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #677077;
-    min-width: 260px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 4;
-}
-
-.dropdown-content a {
-    color: #f2b632;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    z-index: 4;
-}
-
-.dropdown-content a:hover {
-  background-color: #00cc00
-  z-index: 4;
-
-}
->>>>>>> origin/Damian
-
 
 * {
   box-sizing: border-box;
@@ -65,34 +12,11 @@ img {
 
 /* general */
 
-.container1 {
+.container {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
   clear: both;
-  z-index: 4;
-  margin-left: 30px;
-
-
-
-}
-.container2 {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  clear: both;
-  z-index: 1;
-
-
-
-}
-.container3 {
-  width: 100%;
-  margin: 0 auto;
-  clear: both;
-
-
-
 }
 
 h1,
@@ -100,8 +24,6 @@ h2,
 h3,
 p {
   margin-bottom: 20px;
-
-
 }
 
 p:last-child {
@@ -113,17 +35,14 @@ h2,
 h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
-  color: white;
-  margin-right: 190px;
+  color: #4aaaa5;
 }
 
-#h1Activity {
+h1 {
   padding-bottom: 20px;
   font-size: 30px;
   line-height: 49px;
-  color: black;
-  margin-left: 190px;
-
+  border-bottom: 3px solid #ddd;
 }
 
 h2,
@@ -134,13 +53,14 @@ h3 {
 /* header */
 
 #masthead {
+  position: fixed;
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
   overflow: auto;
   color: #fff;
-  background:#16A085;
-  padding: 100px;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
 }
 
 #logo {
@@ -151,22 +71,15 @@ h3 {
   font-size: 30px;
   font-weight: 700;
   line-height: 90px;
-  color: white;
+  color: #fff;
   text-align: center;
   text-decoration: none;
-
-
+  background: #4aaaa5;
 }
 
 nav {
   float: right;
   margin-top: 25px;
-  float: right;
-  margin-top: 25px;
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  margin-right: 50px;
 }
 
 nav a {
@@ -174,15 +87,16 @@ nav a {
   padding-left: 15px;
   margin-left: 15px;
   line-height: 18px;
-  color: white;
+  color: #999;
   text-decoration: none;
   border-left: 1px solid #efefef;
-
 }
 
 nav a:first-child {
   border-left: 0 none;
 }
+
+/* footer */
 
 footer {
   padding: 30px 0;
@@ -190,12 +104,9 @@ footer {
   font-size: 12px;
   color: #fff;
   color: #ccc;
-  color: white;
   text-align: center;
-  background: #16A085;
-
-
-
+  background: #666;
+  border-top: 8px solid #4aaaa5;
 }
 
 /* sidebar */
@@ -229,32 +140,63 @@ h3,
   margin-right: 0;
 }
 
+/* main */
+
+#main-container {
+  padding-top: 130px;
+}
+
 .main-section {
   float: left;
   width: 100%;
-  max-width: 950px;
+  max-width: 650px;
   padding: 30px;
   margin: 0 0 40px;
-
-
-
-
+  background: #fff;
+  border: 1px solid #ddd;
 }
 
 /* portfolio page */
 
-.button-picture {
-    background:blue;
-    display: block;
-    position: relative;
-    padding: 11px 20px;
-    margin-top: -40px;
-
-
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
 }
 
+.work:nth-child(even) {
+  margin-right: 40px;
+}
 
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
 
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
 
 /* contact page */
 
@@ -344,7 +286,7 @@ input[type=submit] {
 }
 @media screen and (max-width:640px){
   body{
-    background:#006600;
+    background:green;
   }
   nav{
     position:relative;
