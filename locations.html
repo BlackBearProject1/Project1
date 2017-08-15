@@ -6,7 +6,6 @@
   <meta charset="UTF-8">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- set view to fit screen-->
-  <title>Title | Ow</title> <!-- title goes here-->
   <title>Locations</title> <!-- title goes here-->
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> <!--css reset file link -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!-- bootstrap CDN-->
@@ -16,7 +15,6 @@
   <script src="assets/javascript/weather.js"></script>
   <script src="assets/javascript/locations.js"></script>
   <script src="assets/javascript/meetup.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjFxuu7fOjkqkLhWGnBRk_W0yUfbPd29k&libraries=places&callback=initMap" async defer></script>
 
 </head>
 
@@ -37,9 +35,8 @@
 </header> <!--end header-->
 
   <div id="map"></div>
-Nearby points of interest are shown on the map.<br>
-A few local meetups are shown below.
-
+  <!-- Replace the value of the key parameter with your own API key. -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjFxuu7fOjkqkLhWGnBRk_W0yUfbPd29k&libraries=places&callback=initMap" async defer></script>
 
   <div id="forecast">
     <div id="day1" class="day"></div>
@@ -50,18 +47,13 @@ A few local meetups are shown below.
     <div id="day6" class="day"></div>
     <div id="day7" class="day"></div>
   </div>
-
-  <div  id="meetups"></div>
-
-
   <div  id="meetups"> </div>
 <footer>
       <div class="container3"> <!--container div for footer -->
-      Copyright &copy; 2017 BlackBear &reg;
+      Copyright &copy; 2017 Brian Helm, BlackBear &reg;
 
       </div>
 </footer>
-
 </body>
 
 </html>
