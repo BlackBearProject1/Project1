@@ -148,6 +148,14 @@ h3 {
   font-size: 22px;
 }
 
+h5{
+  font-size: 22px;
+  font-family: Georgia, Times, "Times New Roman", sans-serif;
+  font-weight: 700;
+  color:black;
+  margin-right: 190px;
+  margin-bottom: 20px;
+}
 /* header */
 
 #masthead {
@@ -267,41 +275,6 @@ h3,
 
 
 }
-
-.work {
-  position: relative;
-  float: left;
-  width: 274px;
-  margin: 20px 0 25px;
-  overflow: auto;
-}
-
-.work:nth-child(even) {
-  margin-right: 40px;
-}
-
- .work img {
-  width: 100%;
-  border: 0 none;
-  opacity: 0.8;
-  margin: auto;
-
-}
-
-.work h3 {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 0;
-  font-weight: 300;
-  line-height: 30px;
-  color: #fff;
-  text-align: center;
-  background: #4aaaa5;
-  border-bottom: 0;
-}
-
 
 
 /* contact page */
