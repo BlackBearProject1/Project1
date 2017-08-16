@@ -148,6 +148,14 @@ h3 {
   font-size: 22px;
 }
 
+h5{
+  font-size: 22px;
+  font-family: Georgia, Times, "Times New Roman", sans-serif;
+  font-weight: 700;
+  color:black;
+  margin-right: 190px;
+  margin-bottom: 20px;
+}
 /* header */
 
 #masthead {

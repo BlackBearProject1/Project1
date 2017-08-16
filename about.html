@@ -1,60 +1,48 @@
 <!DOCTYPE html>
-
 <html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- set view to fit screen-->
+    <title>Where is a good place to...</title> <!-- title goes here-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> <!--css reset file link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> <!--css file link -->
+    <link rel="stylesheet" href="assets/css/choose.css">
+    <script src="assets/javascript/choose.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Title | Wheretogo</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/choose.css">
-</head>
+  <body>
+<style> h5{color:black;}</style>
+    <header id="masthead"> <!-- header -->
 
-<body>
+      <div class="container1">
+        <a href="index.html" id="logo">Back</a><!-- logo and return home-->
+        <h1>Where is a good place to...</h1> <!-- title -->
 
-  <header id="masthead"> <!-- header -->
-    <div class="container">
-      <a href="index.html" id="logo">Logo</a><!-- logo -->
-      <h1>  Wheretogo...</h1> <!-- title -->
-      <d1> <!-- divider -->
-      <nav>
-        <a href="index.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      </d1>
-    </div>
-  </header> <!--end -->
-
-  <div id="main-container" class="container"> <!--main container for picture=buttons -->
-    <section class="main-section">
-      <h1>About</h1> <!-- user prompt / instruction -->
-      <div class="row"> <!-- picture=buttons -->
-      <p>
-        select an activity to find locations and groups near you.
-      </p>
+        <d1> <!-- divider -->
+          <nav>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </d1>
       </div>
 
-    </section>
+    </header> <!--end header-->
+    
+    <div class="container2 about-container">
+      <h5> About: </h5>
 
-
-  </div>
-
-  <footer>
-    <div class="container">
-      Copyright &copy; 2017 Brian Helm
-        <section class="sidebar">
-      <div id="connect">
-        <h2>Contact</h2>
-
-        <a href="https://github.com/BrHelm"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
-        <a href="https://www.linkedin.com/in/brian-helm-006154142/"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-        <a href="https://stackoverflow.com/users/8316305/brhelm"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
-      </div>
-    </section>
+        <p> This site was created by three guys in a coding bootcamp as our first collaborative project. It uses the Google Maps API and Meetups API to find recreational activities near you. Select an activity icon on the main page and enter your current location to find near by locations on google maps and/or find groups to join on meetup. </p>
+     
     </div>
-  </footer>
-</body>
+
+    <footer>
+      <div class="container3"> <!--container div for footer -->
+      Copyright &copy; 2017 BlackBear &reg;
+      </div>
+    </footer>
+
+  </body>
 
 </html>
